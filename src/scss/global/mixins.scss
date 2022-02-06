@@ -1,0 +1,77 @@
+@mixin element-brightness() {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin container() {
+  width: calc(100% - 80px);
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@mixin basic-text() {
+  font-family: "Droid Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+@mixin button-reset() {
+  display: block;
+  padding: 0;
+
+  font-family: inherit;
+  border: none;
+  background-color: inherit;
+}
+
+@mixin zero-margin() {
+  margin: 0;
+}
+
+@mixin list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin name-text() {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  color: $black;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+@mixin info-text() {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  color: $black;
+
+  letter-spacing: 0.08em;
+  margin-bottom: -14px;
+}
+
+@mixin price-text() {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 15px;
+  color: $black;
+
+  letter-spacing: 0.05em;
+}
